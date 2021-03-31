@@ -18,10 +18,6 @@ public class Calculate {
                 result = multiplication.calculateResult(numberOne, numberTwo);
                 break;
             case '/':
-                if (numberTwo == 0) {
-                    System.out.println("Ошибка вычисления. Деление на ноль запрещено...");
-                    break;
-                }
                 result = division.calculateResult(numberOne, numberTwo);
                 break;
             default:
