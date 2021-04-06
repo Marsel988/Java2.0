@@ -22,7 +22,7 @@ public class Calculate {
                 break;
             default:
                 System.out.println("Введенная операция не поддерживается. Повторите ввод...");
-                result = calculate(numberOne, numberTwo, operation);
+                result = 0;
         }
         return result;
     }

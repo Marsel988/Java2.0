@@ -6,8 +6,12 @@ public class Division implements Operation {
         float result = 0;
         try {
             result = number1 / number2;
+            if(number2 == 0){
+                throw new ArithmeticException();
+            }
         } catch (ArithmeticException e) {
             System.out.println("Ошибка вычисления. Деление на ноль запрещено...");
+            throw e;
         }
         return result;
     }
